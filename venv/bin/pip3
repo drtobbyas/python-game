@@ -1,0 +1,8 @@
+#!/mnt/01D95EEB9F3B9D30/drtob_drive/programming/projects/test_repo/python-app2/venv/bin/python3.11
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
